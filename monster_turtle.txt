@@ -1,0 +1,31 @@
+import time
+from turtle import *
+import turtle
+from random import randint
+
+game_screen = turtle.Screen()
+
+
+game_screen.setup(1200,900)
+game_screen.screensize(1000,800)
+game_screen.bgcolor("navajowhite")
+game_screen.title("monster turtle")
+
+
+
+
+tur = turtle.Turtle()
+tur.shape("turtle")
+tur.color("olivedrab")
+tur.shapesize(5)
+tur.penup()
+
+for i in range(20):
+
+    tur.hideturtle()
+    tur.goto(randint(-570,570), randint(-420,420))
+    tur.showturtle()
+    time.sleep(0.5)
+
+
+turtle.mainloop()
